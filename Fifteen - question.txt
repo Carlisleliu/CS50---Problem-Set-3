@@ -1,0 +1,18 @@
+0. Besides 4 × 4 (which are Game of Fifteen’s dimensions), what other dimensions does the framework allow?
+The framework allows the dimensions to range from 3 × 3 to 9 × 9.
+
+1. With what sort of data structure is the game’s board represented?
+The game's board represents a two-dimensional array.
+
+2. What function is called to greet the player at game’s start?
+Function greet is called to greet the player at game's start, wherein function clear() is called the clear the terminal, "WELCOME TO 
+GAME OF FIFTEEN" is printed and function usleep(2000) is called to suspend the execution of the calling thread for 2000 microsecond.
+
+3. What functions do you apparently need to implement?
+void clear(void);
+void greet(void);
+void init(void);
+void draw(void);
+bool move(int tile);
+bool switch_tile(int tile, int tile_row, int tile_col, int empty_tile_row, int empty_tile_col);   --- This one is my own.
+bool won(void);
